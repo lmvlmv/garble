@@ -53,8 +53,8 @@ var (
 
 func init() {
 	flagSet.Usage = usage
-	flagSet.BoolVar(&flagGarbleLiterals, "literals", false, "Obfuscate literals such as strings")
-	flagSet.BoolVar(&flagGarbleTiny, "tiny", false, "Optimize for binary size, losing the ability to reverse the process")
+	flagSet.BoolVar(&flagGarbleLiterals, "literals", true, "Obfuscate literals such as strings")
+	flagSet.BoolVar(&flagGarbleTiny, "tiny", true, "Optimize for binary size, losing the ability to reverse the process")
 	flagSet.StringVar(&flagDebugDir, "debugdir", "", "Write the obfuscated source to a directory, e.g. -debugdir=out")
 	flagSet.StringVar(&flagSeed, "seed", "", "Provide a base64-encoded seed, e.g. -seed=o9WDTZ4CN4w\nFor a random seed, provide -seed=random")
 }
