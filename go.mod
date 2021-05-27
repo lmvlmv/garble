@@ -1,4 +1,4 @@
-module lmvlmv/garble
+module github.com/lmvlmv/garble
 
 go 1.16
 
