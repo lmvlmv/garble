@@ -1,4 +1,4 @@
-module mvdan.cc/garble
+module lmvlmv/garble
 
 go 1.16
 
